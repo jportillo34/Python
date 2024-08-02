@@ -12,9 +12,9 @@ class complejo:
         return "({},{})".format(self.r, self.j)
 
 if __name__ == "__main__":
-	try:
-		P = complejo(3.0, 2.0)
-		Q = complejo(4.0, 4.0)
+try:
+P = complejo(3.0, 2.0)
+Q = complejo(4.0, 4.0)
 		print("P + Q = {}".format(P + Q))
 	except:
 		print("Ocurrio un error")
