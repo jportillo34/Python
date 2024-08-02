@@ -8,8 +8,6 @@ class complejo:
         return complejo(self.r + C.r, self.j + C.j)
     def __sub__(self, C):
         return complejo(self.r - C.r, self.j - C.j)
-    def __neg__(self):
-        return complejo((-1)*self.r, (-1)*self.j)
     def __str__(self):
         return "({},{})".format(self.r, self.j)
 
