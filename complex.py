@@ -14,12 +14,13 @@ class complejo:
 	def __str__(self):
 		return "({},{})".format(self.r, self.j)
 
+def print_suma_complejos(A, B):
+	print("{} + {} = {}".format(A, B, A + B))
+
 def main():
 	""" Funcion principal del programa """
 	try:
-		P = complejo(3.0, 2.0)
-		Q = complejo(4.0, 4.0)
-		print("P + Q = {}".format(P + Q))
+		print_suma_complejos(complejo(3.0, 2.0), complejo(4.0, 4.0))
 	except:
 		print("Ocurrio un error")
 		sys.exit(1)
