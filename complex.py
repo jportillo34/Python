@@ -1,9 +1,5 @@
 import sys
 
-#
-# Nuevo comentario de prueba.
-#
-
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
