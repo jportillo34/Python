@@ -1,3 +1,4 @@
+import re
 import sys
 
 class complejo:
@@ -12,18 +13,31 @@ class complejo:
 	def __neg__(self):
 		return complejo((-1)*self.r, (-1)*self.j)
 	def __str__(self):
-		return "({},{})".format(self.r, self.j)
+		return "{:.2f}+{:.2f}j".format(self.r, self.j)
+	def __repl__(self):
+		return self
 
 def print_suma_complejos(A, B):
 	print("{} + {} = {}".format(A, B, A + B))
 
 def main():
 	""" Funcion principal del programa """
-	try:
-		print_suma_complejos(complejo(3.0, 2.0), complejo(4.0, 4.0))
-	except:
-		print("Ocurrio un error")
+	if len(sys.argv) < 2:
+		print("Error: debe indicar dos valores complejos (a+bj) (c+dj)")
 		sys.exit(1)
+	else:
+		try:
+			# Expresion regular de un complejo expresado como (x.x+y.yj)
+			patron = r"([0-9]{1,}\.[0-9]{1,})\+([0-9]{1,}\.[0-9]{1,})j"
+			p = re.search(patron, sys.argv[1])   # Parte real.
+			q = re.search(patron, sys.argv[2])   # Parte imaginaria.
+			a, b, c, d = float(p[1]), float(p[2]), float(q[1]), float(q[2])
+			A = complejo(a, b)
+			B = complejo(c, d)
+			print("{} + {} = {}".format(A, B, A+B))
+		except:
+			print("Ocurrio un error")
+			sys.exit(1)
 	sys.exit(0)
 
 if __name__ == "__main__":
