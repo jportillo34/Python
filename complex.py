@@ -20,9 +20,6 @@ class complejo:
 def print_suma_complejos(A, B):
 	print("{} + {} = {}".format(A, B, A + B))
 
-def print_suma_complejos(A, B):
-	print("{} + {} = {}".format(A, B, A + B))
-
 def main():
 	""" Funcion principal del programa """
 	if len(sys.argv) < 2:
