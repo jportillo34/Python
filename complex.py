@@ -29,10 +29,6 @@ def main():
 	""" Funcion principal del programa """
 	if len(sys.argv) < 2:
 		print("Error: debe indicar dos valores complejos (a+bj) (c+dj)")
-	try:
-		print_suma_complejos(complejo(3.0, 2.0), complejo(4.0, 4.0))
-	except:
-		print("Ocurrio un error")
 		sys.exit(1)
 	else:
 		try:
