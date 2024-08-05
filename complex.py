@@ -1,6 +1,8 @@
 import re
 import sys
 
+# Cabecera - repo remoto origin/main.
+
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
