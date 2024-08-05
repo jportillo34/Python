@@ -1,10 +1,6 @@
 import re
 import sys
 
-#
-# Cabecera - cambio hecho en el repo local.
-#
-
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
