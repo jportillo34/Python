@@ -19,9 +19,6 @@ class complejo:
 	def __repl__(self):
 		return self
 
-def print_suma_complejos(A, B):
-	print("{} + {} = {}".format(A, B, A + B))
-
 def main():
 	""" Funcion principal del programa """
 	if len(sys.argv) < 2:
