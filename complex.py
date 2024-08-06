@@ -42,5 +42,6 @@ def main():
 			sys.exit(1)
 	sys.exit(0)
 
+# Punto de entrada al script.
 if __name__ == "__main__":
 	main()
