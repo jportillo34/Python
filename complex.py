@@ -15,6 +15,8 @@ class complejo:
 			return complejo(self.r*C, self.j*C)
 		elif isinstance(C, complejo):
 			return complejo(self.r*C.r - self.j*C.j, self.r*C.j + self.j*C.r)
+	def __rmul__(self, C):
+		return complejo(C*self.r, C*self.j)
 	def __neg__(self):
 		return complejo((-1)*self.r, (-1)*self.j)
 	def __str__(self):
