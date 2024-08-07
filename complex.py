@@ -2,7 +2,7 @@ import re
 import sys
 
 #
-# Descripcion: Ejemplifica el manejo en PYTHON de numeros complejos y algunas de las operaciones.
+# Descripcion: Ejemplifica el manejo en PYTHON de numeros complejos y algunas de sus operaciones.
 #
 
 class complejo:
