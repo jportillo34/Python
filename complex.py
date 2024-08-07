@@ -1,6 +1,10 @@
 import re
 import sys
 
+#
+# Descripcion: Ejemplifica el manejo en PYTHON de numeros complejos y algunas de las operaciones.
+#
+
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
