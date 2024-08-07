@@ -1,9 +1,6 @@
 import re
 import sys
 
-#                                 n
-# Ejemplifica el conjunto de los C  y sus operaciones.
-
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
