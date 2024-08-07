@@ -1,6 +1,9 @@
 import re
 import sys
 
+#
+# Descripcion: Script que ejemplifica el conjunto C de los numeros complejos.
+#
 class complejo:
 	""" Representa a un numero complejo """
 	def __init__(self, rI, jI):
