@@ -8,9 +8,11 @@ class complejo:
 		self.j = jI
 	def __add__(self, C):
 		# (a,b) + (c,d) = (a+c,b+d)
+
         	return complejo(self.r + C.r, self.j + C.j)
 	def __sub__(self, C):
 		# (a,b) - (c,d) = (a-c,b-d)
+
 		return complejo(self.r - C.r, self.j - C.j)
 	def __mul__(self, C):
 		if isinstance(C, float):
