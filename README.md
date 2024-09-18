@@ -1,4 +1,4 @@
-# Some PYTHON scripts and tools (image processing and RESTful Web apps).
+# PYTHON scripts and tools (concurrency, image processing and RESTful Web apps).
 
 
 
