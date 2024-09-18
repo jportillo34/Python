@@ -1,7 +1,4 @@
-Some PYTHON scripts and tools
+#Some PYTHON scripts and tools (image processing and RESTful Web apps).
 
-Adicion de linea en el repo local.
-
-adicionamos linea en el repo remoto GITHUB.
 
 
